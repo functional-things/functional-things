@@ -1,0 +1,20 @@
+{
+  "name": "@jrm/functional-tools",
+  "version": "0.0.0-alpha.1",
+  "description": "TypeScript utilities for functional programming.",
+  "scripts": {
+    "test": "exit 0"
+  },
+  "keywords": [
+    "typescript",
+    "functional",
+    "programming",
+    "fp"
+  ],
+  "author": "Joseph R Miles",
+  "license": "Unlicense",
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "typescript": "^4.1.2"
+  }
+}
