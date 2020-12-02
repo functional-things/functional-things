@@ -1,6 +1,6 @@
 {
   "name": "@jrm/functional-tools",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "TypeScript utilities for functional programming.",
   "scripts": {
     "test": "exit 0"
