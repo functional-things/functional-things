@@ -21,8 +21,8 @@
   "bugs": {
     "url": "https://github.com/joebobmiles/FunctionalTools/issues"
   },
-  "main": "./dist/index.js",
-  "types": "./types/index.d.ts",
+  "main": "./index.js",
+  "types": "./index.d.ts",
   "files": [
     "dist/",
     "package.json"
