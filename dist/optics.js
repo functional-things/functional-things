@@ -52,3 +52,4 @@ var composeOptics = function () {
     });
 };
 exports.composeOptics = composeOptics;
+//# sourceMappingURL=optics.js.map

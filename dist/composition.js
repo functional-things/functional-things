@@ -21,3 +21,4 @@ var composeRight = function () {
     };
 };
 exports.composeRight = composeRight;
+//# sourceMappingURL=composition.js.map
