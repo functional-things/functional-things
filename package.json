@@ -33,9 +33,10 @@
   },
   "scripts": {
     "build": "tsc",
-    "clean": "shx rm -rf ./dist ./types",
+    "clean": "shx rm -rf ./dist ./types *.js *.d.ts *.js.map *.tsbuildinfo",
     "build:clean": "npm run clean && npm run build",
-    "test": "exit 0"
+    "test": "exit 0",
+    "postinstall": "npm run build:clean && shx mv dist/* ."
   },
   "dependencies": {
     "typescript": "^4.1.2"
