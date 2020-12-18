@@ -38,7 +38,8 @@
     "clean": "shx rm -rf ./dist ./types *.js *.d.ts *.js.map *.tsbuildinfo",
     "build:clean": "npm run clean && npm run build",
     "test": "exit 0",
-    "postinstall": "npm run build:clean && shx mv dist/* ."
+    "prepare": "npm run build:clean",
+    "postinstall": "shx mv dist/* ."
   },
   "dependencies": {
     "shx": "^0.3.3"
