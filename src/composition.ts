@@ -8,7 +8,7 @@ type ArityOneFn =
     (arg: any) => any;
 
 type PickLastInTuple<T extends any[]> =
-    T extends [...rest: infer U, argn: infer L ]
+    T extends [...rest: infer _, argn: infer L ]
     ? L
     : never;
 

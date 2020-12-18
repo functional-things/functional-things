@@ -25,12 +25,12 @@ export type Prism<W, P> =
 export type Optic<W, P> = (Lens<W, P> | Prism<W, P>);
 
 type FirstOpticParameterType<T extends Optic<any, any>[]> =
-    T[0] extends Optic<infer W, infer P>
+    T[0] extends Optic<infer W, any>
     ? W
     : never;
 
 type LastOpticReturnType<T extends Optic<any, any>[]> =
-    T extends [...rest: infer R, last: Optic<infer W, infer P>]
+    T extends [...rest: T, last: Optic<any, infer P>]
     ? P 
     : never;
 
