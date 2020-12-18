@@ -3,6 +3,7 @@
   "version": "0.1.1",
   "description": "TypeScript utilities for functional programming.",
   "scripts": {
+    "build": "tsc",
     "test": "exit 0"
   },
   "repository": {
