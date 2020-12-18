@@ -1,6 +1,6 @@
 {
   "name": "@jrm/functional-tools",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "TypeScript utilities for functional programming.",
   "license": "Unlicense",
   "keywords": [
@@ -25,6 +25,9 @@
   "types": "./dist/index.d.ts",
   "exports": {
     ".": "./dist/index.js",
+    "./composition": "./dist/composition.js",
+    "./optics": "./dist/optics.js",
+    "./maybe": "./dist/maybe.js",
     "./package.json": "./package.json"
   },
   "scripts": {
