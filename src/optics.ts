@@ -4,7 +4,7 @@
  * @summary Defines generic, type-safe optics and optic composition.
  */
 
-import { compose } from "./composition";
+import { compose } from "./compose";
 import Maybe from "./maybe";
 
 /// A lens focuses from a (W)hole type to a (P)art type of the whole.
