@@ -1,6 +1,6 @@
 {
   "name": "@jrm/functional-tools",
-  "version": "0.2.3",
+  "version": "0.3.0",
   "description": "TypeScript utilities for functional programming.",
   "license": "Unlicense",
   "keywords": [
