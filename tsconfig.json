@@ -9,13 +9,8 @@
     "declaration": true,                   /* Generates corresponding '.d.ts' file. */
     "sourceMap": true,
     "outDir": "./dist",
-    "declarationDir": "./types",
     "removeComments": true,                /* Do not emit comments to output. */
     "downlevelIteration": true,            /* Provide full support for iterables in 'for-of', spread, and destructuring when targeting 'ES5' or 'ES3'. */
-    "baseUrl": ".",
-    "paths": {
-      "@jrm/functional-tools/*": [ "./types/*" ]
-    },
 
     /* Strict Type-Checking Options */
     "strict": true,                           /* Enable all strict type-checking options. */
