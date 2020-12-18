@@ -23,11 +23,12 @@
   },
   "main": "./dist/index.js",
   "types": "./types/index.d.ts",
+  "files": [
+    "dist/",
+    "package.json"
+  ],
   "exports": {
-    "./": "./dist/index.js",
-    "./*": "./dist/*.js",
-    "./types": "./types/index.d.ts",
-    "./types/*": "./types/*.d.ts",
+    "./": "./*",
     "./package.json": "./package.json"
   },
   "scripts": {
