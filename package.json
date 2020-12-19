@@ -58,5 +58,8 @@
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
+  },
+  "dependencies": {
+    "semantic-release": "^17.3.0"
   }
 }
