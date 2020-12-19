@@ -41,9 +41,6 @@
     "prepublishOnly": "npm run build:clean",
     "postinstall": "node ./scripts/post-install.js"
   },
-  "dependencies": {
-    "shx": "^0.3.3"
-  },
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
