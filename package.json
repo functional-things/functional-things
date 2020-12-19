@@ -40,7 +40,8 @@
     "build:clean": "npm run clean && npm run build",
     "test": "exit 0",
     "prepublishOnly": "npm run build:clean",
-    "postinstall": "node ./scripts/post-install.js"
+    "postinstall": "node ./scripts/post-install.js",
+    "release": "semantic-release"
   },
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
