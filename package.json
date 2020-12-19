@@ -35,7 +35,7 @@
   },
   "scripts": {
     "build": "tsc",
-    "clean": "shx rm -rf ./dist ./types *.js *.d.ts *.js.map *.tsbuildinfo",
+    "clean": "node ./scripts/clean.js",
     "build:clean": "npm run clean && npm run build",
     "test": "exit 0",
     "prepublishOnly": "npm run build:clean",
