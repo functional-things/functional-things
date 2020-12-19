@@ -39,7 +39,7 @@
     "build:clean": "npm run clean && npm run build",
     "test": "exit 0",
     "prepublishOnly": "npm run build:clean",
-    "postinstall": "shx mv dist/* . && shx rm -r dist/"
+    "postinstall": "node ./scripts/post-install.js"
   },
   "dependencies": {
     "shx": "^0.3.3"
