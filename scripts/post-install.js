@@ -8,7 +8,9 @@ const rootPath = path.join(__dirname, "..");
 
 const main = async () =>
 {
-    const fileNames = await fs.readdir(distPath);
+    const fileNames = await fs.readdir(distPath).catch(() => {});
+
+    if (!fileNames) return;
 
     for (const fileName of fileNames)
     {
@@ -20,11 +22,4 @@ const main = async () =>
     await fs.rmdir(distPath, { maxRetries: 4 });
 };
 
-try
-{
-    main();
-}
-catch (error)
-{
-    console.error(error.message);
-}
+main();
