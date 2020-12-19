@@ -1,23 +1,28 @@
 "use strict";
 
-const fs = require("fs");
+const fs = require("fs").promises;
 const path = require("path");
 
 const distPath = path.join(__dirname, "..", "dist");
 const rootPath = path.join(__dirname, "..");
 
-try
+const main = async () =>
 {
-    const fileNames = fs.readdirSync(distPath);
+    const fileNames = await fs.readdir(distPath);
 
     for (const fileName of fileNames)
     {
-        fs.renameSync(
+        await fs.rename(
             path.join(distPath, fileName),
             path.join(rootPath, fileName));
     }
 
-    fs.rmdirSync(distPath, { maxRetries: 4 });
+    await fs.rmdir(distPath, { maxRetries: 4 });
+};
+
+try
+{
+    main();
 }
 catch (error)
 {
