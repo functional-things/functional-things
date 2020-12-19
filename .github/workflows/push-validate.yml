@@ -1,7 +1,5 @@
 name: Push & Pull Request Validation
-on:
-  - push
-  - pull_request
+on: [ push, pull_request ]
 
 jobs:
   commitlint:
