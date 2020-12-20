@@ -2,7 +2,7 @@ name: Release
 on:
   workflow_run:
     workflows: ["Push & Pull Request Validation"]
-    branches: [master]
+    branches: [ master, staging ]
     types:
       - completed
 
