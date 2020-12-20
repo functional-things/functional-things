@@ -35,18 +35,18 @@ type LastOpticReturnType<T extends Optic<any, any>[]> =
     : never;
 
 export const composeOptics =
-    <L extends Optic<any, any>[]>(...lenses: L):
+    <L extends Optic<any, any>[]>(...optics: L):
         Optic<FirstOpticParameterType<L>, LastOpticReturnType<L>> =>
     ({
-        get: (w) => compose(...lenses.map((l) => l.get))(w),
+        get: (w) => compose(...optics.map((l) => l.get))(w),
         set: (p, w) => 
-            lenses
+            optics
             .map(
-                (lens, i, lenses) =>
+                (optic, i, optics) =>
                 ({
-                    ...lens,
+                    ...optic,
                     get: (w: any) =>
-                        compose(...lenses.slice(0, i).map((l) => l.get))(w),
+                        compose(...optics.slice(0, i).map((l) => l.get))(w),
                 }))
             .reduceRight(
                 (acc: any, cur: any) => cur.set(acc, cur.get(w)),
