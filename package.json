@@ -71,7 +71,7 @@
       {
         "name": "staging",
         "channel": "preview",
-        "prerelease": true
+        "prerelease": "rc"
       }
     ],
     "plugins": [
