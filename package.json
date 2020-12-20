@@ -41,7 +41,7 @@
     "test": "exit 0",
     "prepublishOnly": "npm run build:clean",
     "postinstall": "node ./scripts/post-install.js",
-    "release": "semantic-release -d"
+    "release": "semantic-release"
   },
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
