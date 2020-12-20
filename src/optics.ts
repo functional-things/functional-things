@@ -11,7 +11,7 @@ import Maybe from "./maybe";
 export type Lens<W, P> =
 {
     get: (w: W) => P,
-    set: (p: P, w: W) => W,
+    set: (w: W, p: P) => W,
 };
 
 /// A prism focuses from a (W)hole type to a (P)art type of the whole, where the
@@ -19,7 +19,7 @@ export type Lens<W, P> =
 export type Prism<W, P> =
 {
     get: (w: W) => Maybe<P>,
-    set: (p: P, w: W) => W,
+    set: (w: W, p: P) => W,
 };
 
 export type Optic<W, P> = (Lens<W, P> | Prism<W, P>);
