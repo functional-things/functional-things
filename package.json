@@ -15,11 +15,11 @@
     "url": "https://jrm.dev"
   },
   "repository": {
-    "url": "git+https://github.com/joebobmiles/FunctionalTools",
+    "url": "git+https://github.com/functional-things/functional-things",
     "type": "git"
   },
   "bugs": {
-    "url": "https://github.com/joebobmiles/FunctionalTools/issues"
+    "url": "https://github.com/functional-things/functional-things/issues"
   },
   "main": "./index.js",
   "types": "./index.d.ts",
