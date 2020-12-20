@@ -14,10 +14,11 @@ const main = async () =>
         
         else if (fileName.match(/^dist$/))
         {
-            await fs.rmdir(
+            await fs.rm(
                 path.join(__dirname, "..", fileName),
                 {
                     recursive: true,
+                    force: true,
                 });
         }
     }
