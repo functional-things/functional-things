@@ -1,6 +1,7 @@
 name: Release
 on:
-  push: [ master, staging ]
+  push:
+    branches: [ master, staging ]
 
 jobs:
   release:
