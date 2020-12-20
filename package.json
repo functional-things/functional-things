@@ -44,6 +44,7 @@
     "release": "semantic-release"
   },
   "devDependencies": {
+    "@amanda-mitchell/semantic-release-npm-multiple": "^2.4.0",
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
     "@semantic-release/git": "^9.0.0",
@@ -74,13 +75,15 @@
     "plugins": [
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
-      ["@amanda-mitchell/semantic-release-npm-multiple",
-      {
-        "registries": {
-          "github": {},
-          "public": {}
+      [
+        "@amanda-mitchell/semantic-release-npm-multiple",
+        {
+          "registries": {
+            "github": {},
+            "public": {}
+          }
         }
-      }],
+      ],
       "@semantic-release/github",
       "@semantic-release/git"
     ]
