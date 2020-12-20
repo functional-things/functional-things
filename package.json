@@ -1,5 +1,5 @@
 {
-  "name": "@jrm/functional-tools",
+  "name": "@functional-things/functional-things",
   "version": "0.4.4",
   "description": "TypeScript utilities for functional programming.",
   "license": "Unlicense",
@@ -74,7 +74,13 @@
     "plugins": [
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
-      "@semantic-release/npm",
+      ["@amanda-mitchell/semantic-release-npm-multiple",
+      {
+        "registries": {
+          "github": {},
+          "public": {}
+        }
+      }],
       "@semantic-release/github",
       "@semantic-release/git"
     ]
