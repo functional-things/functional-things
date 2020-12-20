@@ -30,7 +30,7 @@ type FirstOpticParameterType<T extends Optic<any, any>[]> =
     : never;
 
 type LastOpticReturnType<T extends Optic<any, any>[]> =
-    T extends [...rest: T, last: Optic<any, infer P>]
+    T extends [...rest: any, last: Optic<any, infer P>]
     ? P 
     : never;
 
