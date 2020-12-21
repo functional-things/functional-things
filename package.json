@@ -41,7 +41,7 @@
     "test": "jest",
     "prepublishOnly": "npm run build:clean",
     "postinstall": "node ./scripts/post-install.js",
-    "release": "semantic-release -d"
+    "release": "semantic-release"
   },
   "devDependencies": {
     "@amanda-mitchell/semantic-release-npm-multiple": "^2.4.0",
