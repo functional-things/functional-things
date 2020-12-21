@@ -1,5 +1,7 @@
-name: Push & Pull Request Validation
-on: [ push, pull_request ]
+name: Pull Request Validation
+on:
+  pull_request:
+    branches: [ pr/* ]
 
 jobs:
   commitlint:
