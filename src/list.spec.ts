@@ -1,4 +1,4 @@
-import { cons } from "./list";
+import { arrayToList, cons } from "./list";
 
 describe("cons", () =>
 {
@@ -12,5 +12,19 @@ describe("cons", () =>
   () =>
   {
     expect(cons(1)).toStrictEqual([ 1, [] ]);
+  });
+});
+
+describe("arrayToList", () =>
+{
+  it("Converts an empty array to an empty list.", () =>
+  {
+    expect(arrayToList([])).toStrictEqual([]);
+  });
+
+  it("Converts a non-empty array to a non-empty list.", () =>
+  {
+    expect(arrayToList([ 1 ])).toStrictEqual([ 1, [] ]);
+    expect(arrayToList([ 1, 2 ])).toStrictEqual([ 1, [ 2, [] ] ]);
   });
 });
