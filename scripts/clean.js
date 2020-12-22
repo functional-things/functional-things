@@ -25,11 +25,4 @@ const main = async () =>
     }
 }
 
-try
-{
-    main();
-}
-catch (error)
-{
-    console.error(error.message)
-}
+main();
