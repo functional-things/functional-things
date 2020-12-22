@@ -16,10 +16,12 @@ const main = async () =>
     {
         await fs.rename(
             path.join(distPath, fileName),
-            path.join(rootPath, fileName));
+            path.join(rootPath, fileName))
+            .catch((error) => { throw error });
     }
 
-    await fs.rmdir(distPath, { maxRetries: 4 });
+    await fs.rmdir(distPath, { maxRetries: 4, recursive: true })
+        .catch((error) => { throw error });
 };
 
 main();
