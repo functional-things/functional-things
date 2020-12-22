@@ -10,25 +10,19 @@ const main = async () =>
     for (const fileName of fileNames)
     {
         if (fileName.match(/\.(js(\.map)?|d\.ts|tsbuildinfo)$/))
-            await fs.rm(path.join(__dirname, "..", fileName));
+            await fs.rm(path.join(__dirname, "..", fileName))
+                .catch((error) => { throw error });
         
         else if (fileName.match(/^dist$/))
         {
-            await fs.rm(
+            await fs.rmdir(
                 path.join(__dirname, "..", fileName),
                 {
                     recursive: true,
-                    force: true,
-                });
+                })
+                .catch((error) => { throw error });
         }
     }
 }
 
-try
-{
-    main();
-}
-catch (error)
-{
-    console.error(error.message)
-}
+main();
