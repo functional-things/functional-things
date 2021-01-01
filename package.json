@@ -1,13 +1,18 @@
 {
-  "name": "@functional-things/functional-things",
-  "version": "3.1.0-rc.1",
-  "description": "TypeScript utilities for functional programming.",
+  "name": "@functional-things/monorepo",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Monorepo for @functional-things.",
   "license": "Unlicense",
   "keywords": [
-    "typescript",
+    "functional-things",
     "functional",
     "programming",
-    "fp"
+    "typescript",
+    "ts",
+    "fp",
+    "tools",
+    "utilities"
   ],
   "author": {
     "name": "Joseph R Miles",
@@ -21,26 +26,11 @@
   "bugs": {
     "url": "https://github.com/functional-things/functional-things/issues"
   },
-  "main": "./index.js",
-  "types": "./index.d.ts",
-  "files": [
-    "dist/",
-    "scripts/",
-    "LICENSE",
-    "package.json",
-    "tsconfig.json"
+  "workspaces": [
+    "packages/*"
   ],
-  "exports": {
-    "./": "./*",
-    "./package.json": "./package.json"
-  },
   "scripts": {
-    "build": "tsc",
-    "clean": "node ./scripts/clean.js",
-    "build:clean": "npm run clean && npm run build",
-    "test": "jest",
-    "prepublishOnly": "npm run build:clean",
-    "postinstall": "node ./scripts/post-install.js",
+    "lint": "eslint .",
     "release": "semantic-release"
   },
   "devDependencies": {
@@ -51,7 +41,7 @@
     "@types/jest": "^26.0.19",
     "husky": "^4.3.6",
     "jest": "^26.6.3",
-    "semantic-release": "^17.3.0",
+    "multi-semantic-release": "^2.6.0",
     "ts-jest": "^26.4.4",
     "typescript": "^4.1.2"
   },
