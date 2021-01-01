@@ -1,5 +1,9 @@
 name: Push & PR Validation
-on: [ push, pull_request ]
+on: 
+  push:
+    branches-ignore: [master, staging]
+  pull_request:
+    branches: [master, staging]
 
 jobs:
   commitlint:
