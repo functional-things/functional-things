@@ -30,6 +30,7 @@
     "packages/*"
   ],
   "scripts": {
+    "test": "jest",
     "lint": "eslint .",
     "release": "semantic-release"
   },
