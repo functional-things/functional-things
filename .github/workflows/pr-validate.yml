@@ -1,4 +1,4 @@
-name: Pull Request Validation
+name: Push & PR Validation
 on: [ push, pull_request ]
 
 jobs:
@@ -22,17 +22,18 @@ jobs:
         run: npx commitlint --from HEAD~1 --to HEAD
 
   test:
-    matrix:
-      os:
-        - ubuntu-latest
-        - macos-latest
-        - windows-latest
+    strategy:
+      matrix:
+        os:
+          - ubuntu-latest
+          - macos-latest
+          - windows-latest
 
-      node:
-        - 10.x
-        - 12.x
-        - 14.x
-        - 15.x
+        node:
+          - 10.x
+          - 12.x
+          - 14.x
+          - 15.x
 
     runs-on: ${{ matrix.os }}
 
