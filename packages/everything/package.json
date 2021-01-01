@@ -35,7 +35,7 @@
   "bugs": {
     "url": "https://github.com/functional-things/functional-things/issues"
   },
-  "homepage": "https://github.com/functional-things/functional-things/tree/master/packages/functional-things#readme",
+  "homepage": "https://github.com/functional-things/functional-things/tree/master/packages/everything#readme",
   "publishConfig": {
     "access": "public"
   },
