@@ -1,0 +1,42 @@
+{
+  "name": "@functional-things/maybe",
+  "version": "1.0.0",
+  "description": "The maybe package for @functional-things.",
+  "main": "dist/maybe.js",
+  "types": "dist/maybe.d.ts",
+  "files": [
+    "dist/*"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/functional-things/functional-things.git",
+    "directory": "packages/maybe"
+  },
+  "keywords": [
+    "functional-things",
+    "functional",
+    "programming",
+    "typescript",
+    "ts",
+    "fp",
+    "maybe",
+    "option",
+    "type"
+  ],
+  "author": "Joseph R Miles",
+  "license": "Unlicense",
+  "publishConfig": {
+    "access": "public"
+  },
+  "bugs": {
+    "url": "https://github.com/functional-things/functional-things/issues"
+  },
+  "homepage": "https://github.com/functional-things/functional-things#readme",
+  "devDependencies": {
+    "typescript": "^4.1.3"
+  }
+}

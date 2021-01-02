@@ -6,4 +6,4 @@
 
 export * from "./compose";
 export * from "../../optics/src/optics";
-export * from "./maybe";
+export * from "../../maybe/src/maybe";
