@@ -2,7 +2,11 @@
   "name": "@functional-things/optics",
   "version": "1.0.0",
   "description": "The optics package for @functional-tools.",
-  "main": "index.js",
+  "main": "dist/optics.js",
+  "types": "dist/optics.d.ts",
+  "files": [
+    "dist/*"
+  ],
   "scripts": {
     "test": "jest",
     "build": "tsc",
