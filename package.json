@@ -32,7 +32,7 @@
   "scripts": {
     "test": "jest",
     "lint": "eslint .",
-    "release": "multi-semantic-release --debug"
+    "release": "multi-semantic-release --debug --first-parent"
   },
   "devDependencies": {
     "@amanda-mitchell/semantic-release-npm-multiple": "^2.4.0",
