@@ -5,5 +5,5 @@
  */
 
 export * from "./compose";
-export * from "./optics";
+export * from "../../optics/src/optics";
 export * from "./maybe";

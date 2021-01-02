@@ -4,7 +4,8 @@
  * @summary Defines generic, type-safe optics and optic composition.
  */
 
-import Maybe from "./maybe";
+// import Maybe from "../../everything/src/maybe";
+type Maybe<T> = T | null;
 
 /// A lens focuses from a (W)hole type to a (P)art type of the whole.
 export type Lens<W, P> =
