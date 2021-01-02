@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "outDir": "./",
+  },
+  "exclude": [
+    "./dist/*",
+    "./src/**.spec.ts"
+  ]
+}
