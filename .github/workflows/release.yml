@@ -6,6 +6,8 @@ on:
 jobs:
   release:
     runs-on: ubuntu-latest
+    
+    name: Run Semantic Release
     steps:
       - name: Checkout latest
         uses: actions/checkout@v2
