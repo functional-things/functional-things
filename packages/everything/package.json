@@ -1,6 +1,7 @@
 {
   "name": "@functional-things/everything",
   "version": "0.0.0",
+  "private": false,
   "description": "TypeScript utilities for functional programming.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
