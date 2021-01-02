@@ -1,6 +1,6 @@
 {
   "name": "@functional-things/optics",
-  "version": "1.0.0",
+  "version": "",
   "description": "The optics package for @functional-tools.",
   "main": "dist/optics.js",
   "types": "dist/optics.d.ts",
