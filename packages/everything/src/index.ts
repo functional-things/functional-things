@@ -4,6 +4,6 @@
  * @summary Re-exports all sibling modules to create a catch-all import.
  */
 
-export * from "./compose";
-export * from "./optics";
-export * from "./maybe";
+export * from "../../compose/src/compose";
+export * from "../../optics/src/optics";
+export * from "../../maybe/src/maybe";
