@@ -48,8 +48,8 @@
     "testEnvironment": "node"
   },
   "dependencies": {
-    "@functional-things/compose": "workspace:packages/compose",
-    "@functional-things/maybe": "workspace:packages/maybe",
-    "@functional-things/optics": "workspace:packages/optics"
+    "@functional-things/compose": "^1.0.0-rc.1",
+    "@functional-things/maybe": "^1.0.0-rc.1",
+    "@functional-things/optics": "^1.0.0-rc.1"
   }
 }
