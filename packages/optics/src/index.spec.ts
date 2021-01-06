@@ -1,4 +1,4 @@
-import { Lens, composeOptics } from "./optics";
+import { Lens, composeOptics } from ".";
 
 describe("composeOptics", () =>
 {
