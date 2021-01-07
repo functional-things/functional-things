@@ -2,8 +2,8 @@
   "name": "@functional-things/maybe",
   "version": "1.0.0-rc.1",
   "description": "The maybe package for @functional-things.",
-  "main": "dist/index",
-  "types": "dist/index",
+  "main": "dist/maybe.js",
+  "types": "dist/maybe.d.ts",
   "files": [
     "dist/*"
   ],

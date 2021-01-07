@@ -1,4 +1,4 @@
-import { compose, composeRight } from ".";
+import { compose, composeRight } from "./compose";
 
 describe("compose", () =>
 {
