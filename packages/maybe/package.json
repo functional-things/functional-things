@@ -1,6 +1,6 @@
 {
   "name": "@functional-things/maybe",
-  "version": "1.0.0-rc.1",
+  "version": "",
   "description": "The maybe package for @functional-things.",
   "main": "dist/maybe.js",
   "types": "dist/maybe.d.ts",
