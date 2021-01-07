@@ -2,8 +2,8 @@
   "name": "@functional-things/everything",
   "version": "1.0.0-rc.1",
   "description": "TypeScript utilities for functional programming.",
-  "main": "dist/index",
-  "types": "dist/index",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc -b",
     "test:watch": "jest --watch",
