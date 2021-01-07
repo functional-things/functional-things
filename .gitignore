@@ -9,6 +9,3 @@ dist/
 !.yarn/releases
 !.yarn/sdks
 .pnp.*
-
-# Ignore debug/error logs
-*.log
