@@ -2,8 +2,8 @@
   "name": "@functional-things/optics",
   "version": "1.0.0-rc.1",
   "description": "The optics package for @functional-tools.",
-  "main": "dist/index",
-  "types": "dist/index",
+  "main": "dist/optics.js",
+  "types": "dist/optics.d.ts",
   "files": [
     "dist/*"
   ],

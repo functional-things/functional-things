@@ -2,8 +2,8 @@
   "name": "@functional-things/compose",
   "version": "1.0.0-rc.1",
   "description": "The function compositon package from @functional-things.",
-  "main": "dist/index",
-  "types": "dist/index",
+  "main": "dist/compose.js",
+  "types": "dist/compose.d.ts",
   "files": [
     "dist/*"
   ],

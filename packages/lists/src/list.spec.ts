@@ -1,4 +1,4 @@
-import { arrayToList, cons, listToArray } from ".";
+import { arrayToList, cons, listToArray } from "./list";
 
 describe("cons", () =>
 {
