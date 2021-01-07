@@ -1,17 +1,6 @@
 {
-  "extends": "../../tsconfig.build.json",
+  "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "outDir": "./dist",
-    "rootDir": "./src",
-    "tsBuildInfoFile": "./dist/.tsbuildinfo"
-  },
-  "exclude": [
-    "./dist/*",
-    "./src/*.spec.ts"
-  ],
-  "references": [
-    { "path": "../compose" },
-    { "path": "../maybe" },
-    { "path": "../optics" }
-  ]
+    "outDir": "./dist"
+  }
 }
