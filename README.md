@@ -1,29 +1,25 @@
-# Functional Tools
+# Functional Things
 
 This is a repository of all my personal tools for functional programming in
 TypeScript. Since this library relies _heavily_ on TypeScript's type system, it
-won't be useful for applications in Vanilla JavaScript or using typecheckers
-like Flow.
+won't be useful for applications written in Vanilla JavaScript or projects that
+use typecheckers like Flow.
 
-## Modules
+## Packages
 
-### `composition`
+### `@functional-things/everything`
 
-The `composition` module provides two versions of functional composition:
-`compose` and `composeRight`. `compose` performs function composition in the
-listed order, so the function passed as the first parameter is applied first.
-While this is not traditionally how function composition works, it's much easier
-to reason about. Those looking for a more traditional compose function, there's
-`composeRight`, which applies functions in the reverse of listed order.
+This package requires and exports all other Functional Things packages.
 
-### `maybe`
+### `@functional-things/compose`
 
-The `maybe` module is the smallest module in the lot and quite possibly
-pointless. This module provides a generic "option" type whose value is either
-that of the type parameter, or null.
+This package provides function composition utilities.
 
-### `optics`
+### `@functional-things/maybe`
 
-The `optics` module is the module I am so far most proud of. This provides types
-for lenses and prisms, as well as a function for composing optics together.
-For now, optic composition is in listed order.
+This package provides a Maybe type. (So simple it's actually embarassing.)
+
+### `@functional-things/optics`
+
+This package provides functional optics (lenses, prisms; sometimes called
+"functional references") and a utility for composing optics together.
