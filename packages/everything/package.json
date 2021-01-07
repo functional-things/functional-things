@@ -1,6 +1,6 @@
 {
   "name": "@functional-things/everything",
-  "version": "1.0.0-rc.1",
+  "version": "1.0.0",
   "description": "TypeScript utilities for functional programming.",
   "main": "dist/index",
   "types": "dist/index",
@@ -48,8 +48,8 @@
     "testEnvironment": "node"
   },
   "dependencies": {
-    "@functional-things/compose": "^1.0.0-rc.1",
-    "@functional-things/maybe": "^1.0.0-rc.1",
-    "@functional-things/optics": "^1.0.0-rc.1"
+    "@functional-things/compose": "2.0.0",
+    "@functional-things/maybe": "1.0.0",
+    "@functional-things/optics": "1.0.0"
   }
 }
