@@ -1,11 +1,3 @@
 .vscode/
-
-# Ignore TypeScript build artifacts
+node_modules/
 dist/
-*.tsbuildinfo
-
-# Ignore Yarn install bloat
-.yarn/*
-!.yarn/releases
-!.yarn/sdks
-.pnp.*
