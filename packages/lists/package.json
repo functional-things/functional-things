@@ -1,6 +1,6 @@
 {
   "name": "@functional-things/lists",
-  "version": "1.0.0-rc.1",
+  "version": "1.0.0",
   "description": "The lists package from @functional-things.",
   "main": "dist/index",
   "types": "dist/index",
