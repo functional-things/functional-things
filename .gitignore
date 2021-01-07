@@ -1,3 +1,11 @@
-.vscode/
 node_modules/
+
+# Ignore VSCode config
+.vscode/
+
+# Ignore TypeScript build artifacts
 dist/
+*.tsbuildinfo
+
+# Ignore debug/error logs
+*.log
