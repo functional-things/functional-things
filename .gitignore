@@ -1,11 +1,14 @@
-node_modules/
-
-# Ignore VSCode config
 .vscode/
 
 # Ignore TypeScript build artifacts
 dist/
 *.tsbuildinfo
+
+# Ignore Yarn install bloat
+.yarn/*
+!.yarn/releases
+!.yarn/sdks
+.pnp.*
 
 # Ignore debug/error logs
 *.log
