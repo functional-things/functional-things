@@ -1,10 +1,11 @@
-.vscode/
 node_modules/
-dist/
 
-.yarn/*
-!.yarn/releases
-!.yarn/plugins
-!.yarn/sdks
-!.yarn/versions
-.pnp.*
+# Ignore VSCode config
+.vscode/
+
+# Ignore TypeScript build artifacts
+dist/
+*.tsbuildinfo
+
+# Ignore debug/error logs
+*.log

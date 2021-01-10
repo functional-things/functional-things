@@ -2,8 +2,8 @@
   "name": "@functional-things/lists",
   "version": "1.0.0-rc.1",
   "description": "The lists package from @functional-things.",
-  "main": "dist/lists.js",
-  "types": "dist/lists.d.ts",
+  "main": "dist/index",
+  "types": "dist/index",
   "files": [
     "dist/*"
   ],
