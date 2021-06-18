@@ -6,6 +6,10 @@ on:
 jobs:
   release:
     runs-on: ubuntu-latest
+
+    env:
+      GIT_AUTHOR_NAME: Joseph R Miles
+      GIT_AUTHOR_EMAIL: joe@jrm.dev
     
     name: Run Semantic Release
     steps:

@@ -1,11 +1,11 @@
 {
   "name": "@functional-things/everything",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "TypeScript utilities for functional programming.",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "dist/index",
+  "types": "dist/index",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc -b",
     "test:watch": "jest --watch",
     "prepare": "npm run build"
   },
@@ -46,5 +46,10 @@
   "jest": {
     "preset": "ts-jest",
     "testEnvironment": "node"
+  },
+  "dependencies": {
+    "@functional-things/compose": "2.0.0",
+    "@functional-things/maybe": "1.0.0",
+    "@functional-things/optics": "1.0.0"
   }
 }
